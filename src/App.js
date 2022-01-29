@@ -1,8 +1,8 @@
 import './App.css';
+import React, { useState } from 'react'
 import RecipeCard from './components/RecipeCard.js'
 import recipes from './components/recipes.js'
 import Navbar from './components/Navbar.js'
-import React, { useState } from 'react'
 
 function CreateRecipeCard(recipe) {
   return (
@@ -14,7 +14,6 @@ function CreateRecipeCard(recipe) {
       location={recipe.location}
       author={recipe.author}
       likes={recipe.likes}
-
     />
   );
 }
@@ -24,6 +23,8 @@ function App() {
   const [recipesWithLocation, setRecipesWithLocationState] = useState("");
   return (
     <div>
+
+
       <Navbar />
       <div className='recipeHeader'>
         <h1 className='recipeListLabel'>
@@ -40,7 +41,7 @@ function App() {
           var recipesToUse = recipes.filter((recipe) => {
             console.log('here before loop and recipe name is ' + recipe.title + 'and its size of location is ' + recipe.location.length + 'its first location is ' + recipe.location[0])
             for (let i = 0; i < recipe.location.length; i++) {
-              if(selectedLocation=='Any'){
+              if(selectedLocation==='Any'){
                 return recipe
               }
               else if (recipe.location[i] === selectedLocation) {
@@ -49,7 +50,7 @@ function App() {
               }
             }
           })
-          recipesToUse.length != 0 ? setRecipesWithLocationState(recipesToUse) : console.log('Empty')
+          recipesToUse.length !== 0 ? setRecipesWithLocationState(recipesToUse) : console.log('Empty')
         }}>
           <option>Any</option>
           <option value="CollegeAve">CollegeAve</option>
@@ -67,7 +68,9 @@ function App() {
               <h1 >No Results found!</h1> </div>
           )}
       </div>
+
     </div>
+
   );
 }
 

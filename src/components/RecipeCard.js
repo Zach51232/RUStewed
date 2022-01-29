@@ -1,32 +1,48 @@
 import React from 'react';
 
-
 import '../App.css'
+import { Link } from 'react-router-dom'
+
+
 export default function RecipeCard(props) {
+  var image = props.image
+  var title = props.title
+  var description = props.description
+  var author = props.author
+  var location = props.location
   return (
     <div className='carditself col-lg-3 col-md-4 col-sm-6 col-6'>
       <div className="card border-dark text-center h-100">
-        <img className="card-img-top" src={props.image} alt="Card" />
+        <img className="card-img-top" src={image} alt="Card" />
         <div className="card-body ">
-          <h5 className="card-title">{props.title}</h5>
-          <p className="card-text">{props.description}</p>
-          <a className='toRecipe' href="https://www.google.com">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">{description}</p>
+          <Link to='/recipe' state={
+            [
+              { image: image },
+              { title: title },
+              { description: description },
+              { author: author },
+              { location: location }
+            ]
+          }
+          >
             See recipe
-            <p className='card-author'>{props.author}</p>
-          </a>
+            <p className='card-author'>{author}</p>
+          </Link>
           <div className='rowPics'>
-            <div className='columnPics'>
-              {props.location.length >= 1 ? <img className='labelPlace' src={require('../imgs/' + props.location[0] + '.jpg')} alt='location'></img> : <p></p>}
-            </div>
-            <div className='columnPics'>
-              {props.location.length >= 2 ? <img className='labelPlace' src={require('../imgs/' + props.location[1] + '.jpg')} alt='location'></img> : <p></p>}
-            </div>
-            <div className='columnPics'>
-              {props.location.length === 3 ? <img className='labelPlace' src={require('../imgs/' + props.location[2] + '.jpg')} alt='location'></img> : <p></p>}
-            </div>
+            {
+              location.length > 0 ? (location.map(function (location, i) {
+                return (
+                    <div className='columnPics' key={i}>
+                        <img className='labelPlace' key={i} src={require('../imgs/' + location + '.jpg')} alt='location'></img>
+                    </div>
+                );
+            })) : <p>no labels</p>
+            }
           </div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
