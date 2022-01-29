@@ -1,38 +1,61 @@
-.App {
+.recipeListLabel{
+  padding: 5% 3% 0px 5%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.noneFound{
+  text-align:center;
+}
+.row{
+  padding: 0px 4%;
+}
+.carditself{
+  font-size: 1.5vw;
+  margin-bottom: 4%;
+}
+.card-img-top{
+  width: 100%;
+  height: 35vw;
+}
+.card-title{
+  font-size: 2.5vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-author{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.toRecipe{
+  color: grey;
+}
+.rowPics{
+  margin-top: 20%;
+}
+/* Clear floats after image containers */
+.rowPics::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.columnPics {
+  float: left;
+  width: 10%;
+  height: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.labelPlace{
+  border-radius: 50%;
+  width: 90%;
+  padding: 0px 5%;
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
