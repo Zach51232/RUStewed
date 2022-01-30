@@ -13,7 +13,7 @@ export default function RecipeCard(props) {
   var author = props.author
   var location = props.location
   return (
-    <div className='carditself col-lg-3 col-md-4 col-sm-6 col-6'>
+    <div className='carditself col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6'>
       <Link to='/recipe' className='linkCard' state={
         [
           { image: image },
