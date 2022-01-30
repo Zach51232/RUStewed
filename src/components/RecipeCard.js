@@ -33,6 +33,7 @@ export default function RecipeCard(props) {
               category: "Button",
               action: "Clicked See Recipe",
             });
+            console.log('event clicked see recipe')
           }}
           >
             See recipe
