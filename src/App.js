@@ -38,7 +38,6 @@ function App() {
         <select className="custom-select" defaultValue='Any' onChange={(e) => {
           var selectedLocation = e.target.value;
           setSelectedLocationState(selectedLocation);
-
           var recipesToUse = recipes.filter((recipe,p) => {
             for (let i = 0; i < recipe.location.length; i++) {
               if (selectedLocation === 'Any') {
