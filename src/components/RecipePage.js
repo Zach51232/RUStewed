@@ -6,17 +6,18 @@ import ReactGA from "react-ga4";
 export default function RecipePage() {
     const location = useLocation()
     let navigate = useNavigate()
-    const a = useEffect(() => {
+    useEffect(() => {
         ReactGA.initialize("G-28M3TNC840")
-        if (location.state === null){
+        if (location.state === null) {
             ReactGA.event({
                 category: "ErrorLoad",
                 action: "came to recipe page with location.state as null",
             });
             navigate('/')
-        } 
-        else{
-            ReactGA.send({ hitType: 'pageview', page: '/recipe'+'/'+location.state[1].title })
+        }
+        else {
+            var pagesrc = '/recipe/' + location.state[1].title
+            ReactGA.send({ hitType: 'pageview', page: pagesrc })
         }
     });
     if (location.state !== null) {
@@ -46,7 +47,7 @@ export default function RecipePage() {
                 </div>
                 <div className='page'>
                     <div className='rowPics'>
-                        <h2>Where to make it:</h2>
+                        <h5>Campus dining halls with ingredients:</h5>
                         {
                             loc.length > 0 ? (loc.map(function (loc, i) {
                                 return (
@@ -57,6 +58,9 @@ export default function RecipePage() {
                             })) : <p>no labels</p>
                         }
                     </div>
+                </div>
+                <div>
+                    <p><i>Contributed by {author}</i></p>
                 </div>
             </div >
         );
