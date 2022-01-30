@@ -31,13 +31,13 @@ export default function RecipePage() {
         return (
             <div>
                 <Navbar />
-                <Link className='btn btn-secondary' to='/' onClick={() => {
+                <Link className='backhome btn btn-light' to='/' onClick={() => {
                     ReactGA.event({
                         category: "Button",
                         action: "Clicked Home primary btn",
                     });
                 }
-                }>Back to home
+                }> Back to home
                 </Link>
                 <div className="jumbotron">
                     <h1 className="display-4">{title}</h1>
