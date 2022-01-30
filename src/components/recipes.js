@@ -53,7 +53,7 @@ const recipes = [
         id: 4,
         title: 'Trail Mix',
         image: trailmix,
-        description: 'Take the nuts, m&m, chocolates chips, crashing or raisins and it I see dried fruits mix together, Ziploc it and take it home.',
+        description: 'Take the nuts, m&m, chocolates chips, craisins or raisins and some fruits mix together, Ziploc it and take it home.',
         author: 'Scarlet Knight',
         location: [
             'Livingston'
