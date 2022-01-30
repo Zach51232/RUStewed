@@ -18,7 +18,7 @@ export default function RecipePage() {
         else {
             ReactGA.event({ 
                 category: 'page',
-                action: ' /recipe/'+location.state[1].title
+                action: '/recipe/'+location.state[1].title
             })
         }
     });

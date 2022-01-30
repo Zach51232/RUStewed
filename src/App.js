@@ -4,7 +4,8 @@ import RecipeCard from './components/RecipeCard.js'
 import recipes from './components/recipes.js'
 import Navbar from './components/Navbar.js'
 import ReactGA from "react-ga4";
-
+import Contact from './components/Contact.js'
+import RecipeHeader from './components/RecipeHeader.js'
 function CreateRecipeCard(recipe) {
   return (
     <RecipeCard
@@ -32,11 +33,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className='recipeHeader'>
-        <h1 className='recipeListLabel'>
-          <span>Recipe list</span>
-        </h1>
-      </div>
+      <RecipeHeader/>
       <div className='container p-5'>
         <select className="custom-select" defaultValue='Any' onChange={(e) => {
           var loc = e.target.value;
@@ -76,9 +73,7 @@ function App() {
               <h1 >No Results found!</h1> </div>
           )}
       </div>
-      <div className='contact'>
-        <p><i>Contact me @ rustewed@gmail.com</i></p>
-      </div>
+      <Contact/>
     </div>
   );
 }

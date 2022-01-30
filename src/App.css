@@ -17,14 +17,14 @@
   height: 30vw;
 }
 .card-title{
-  font-size: 5vw;
+  font-size: 2vw;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 6% 0px;
 }
 .card-text{
-  font-size: 3vw;
+  font-size: 1vw;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -36,7 +36,7 @@
 }
 .toRecipe{
   color: grey;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .rowPics{
   margin-top: 20%;
