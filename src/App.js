@@ -39,6 +39,12 @@ function App() {
       <div className='container p-5'>
         <select className="custom-select" defaultValue='Any' onChange={(e) => {
           var loc = e.target.value;
+          ReactGA.initialize("G-28M3TNC840")
+          ReactGA.event({
+            category: "Dropdown",
+            action: "Set campus to"+loc
+          });
+          console.log('Send event set campus to '+loc)
           if(!loc) console.log(selectedLocation)
           setSelectedLocationState(loc);
           var recipesToUse = recipes.filter((recipe,p) => {
@@ -69,6 +75,9 @@ function App() {
             <div className='noneFound'>
               <h1 >No Results found!</h1> </div>
           )}
+      </div>
+      <div className='contact'>
+        <p><i>Contact me @ rustewed@gmail.com</i></p>
       </div>
     </div>
   );

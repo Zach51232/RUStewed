@@ -34,7 +34,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .toRecipe{
   color: grey;
   font-size: 2vw;
@@ -52,7 +51,6 @@
   width: 10%;
   height: 20%;
 }
-
 .labelPlace{
   border-radius: 50%;
   width: 90%;
@@ -66,7 +64,9 @@
   width: 100%;
   height: 70vw;
 }
-
+.contact{
+  text-align: center;
+}
 .bottomHalf{
   text-align: left;
   margin-left: 4%;
