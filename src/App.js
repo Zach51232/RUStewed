@@ -22,10 +22,11 @@ function CreateRecipeCard(recipe) {
 function App() {
   useEffect(() => {
     ReactGA.initialize("G-28M3TNC840")
-    ReactGA.send({ hitType: 'pageview', page: '/' })
-    console.log('send pageview /')
-
-  }, [])
+    ReactGA.event({ 
+      category: 'page',
+      action: '/'
+  })
+}, [])
   const [selectedLocation, setSelectedLocationState] = useState("");
   const [recipesWithLocation, setRecipesWithLocationState] = useState("");
   return (

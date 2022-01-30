@@ -4,8 +4,6 @@ import Navbar from './Navbar'
 import ReactGA from "react-ga4";
 
 export default function RecipePage() {
-    ReactGA.send("pageview");
-    console.log('send pageview')
     const location = useLocation()
     let navigate = useNavigate()
     useEffect(() => {
@@ -15,12 +13,13 @@ export default function RecipePage() {
                 category: "ErrorLoad",
                 action: "@ recipe page w/ null location.state",
             });
-            console.log('null state recipe')
             navigate('/')
         }
         else {
-            ReactGA.send({ hitType: 'pageview', page: '/recipe/'+location.state[1].title })
-            console.log('send pageview /recipe/'+location.state[1].title)
+            ReactGA.event({ 
+                category: 'page',
+                action: ' /recipe/'+location.state[1].title
+            })
         }
     });
     if (location.state !== null) {
@@ -37,7 +36,6 @@ export default function RecipePage() {
                         category: "Button",
                         action: "Clicked Home primary btn",
                     });
-                    console.log('clicked home primary')
                 }
                 }>Back to home
                 </Link>
