@@ -64,7 +64,7 @@ const recipes = [
         id: 5,
         title: 'Crunchy Roasted Pepper Panini',
         image: redpanini,
-        desciption: 'Rip a tortilla (by the fruit) in half and spread with hummus (health bar) on one side. Place roasted peppers and tortilla chips (if available at health bar) on the hummus. Add onions and whatever else you’d like (salad bar). Put in panini press. Then drizzle chipotle mayo or your condiment of choice on the inside.',
+        description: 'Rip a tortilla (by the fruit) in half and spread with hummus (health bar) on one side. Place roasted peppers and tortilla chips (if available at health bar) on the hummus. Add onions and whatever else youd like (salad bar). Put in panini press. Then drizzle chipotle mayo or your condiment of choice on the inside.',
         author: 'Zach',
         location: [
             'Livingston'

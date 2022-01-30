@@ -31,7 +31,7 @@ export default function RecipePage() {
         return (
             <div>
                 <Navbar />
-                <Link className='btn btn-primary' to='/' onClick={() => {
+                <Link className='btn btn-secondary' to='/' onClick={() => {
                     ReactGA.event({
                         category: "Button",
                         action: "Clicked Home primary btn",

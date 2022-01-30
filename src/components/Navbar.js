@@ -11,7 +11,7 @@ return(
               });
               console.log('Home from navbar')
       }}>RUStewed</a>
-    <a className='nav-link' href='https://docs.google.com/forms/d/e/1FAIpQLSetJAASQzImx0oBWHyNy1DMgvcd-GJi8FnHnMXH5PK3O2THdg/viewform' onClick={
+    <a className='nav-link btn btn-primary' href='https://docs.google.com/forms/d/e/1FAIpQLSetJAASQzImx0oBWHyNy1DMgvcd-GJi8FnHnMXH5PK3O2THdg/viewform' onClick={
         ()=>{
                 ReactGA.event({
                   category: "Button",

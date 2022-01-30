@@ -35,7 +35,7 @@ function App() {
       <Navbar />
       <RecipeHeader/>
       <div className='container p-5'>
-        <select className="custom-select" defaultValue='Any Campus' onChange={(e) => {
+        <select className="custom-select" defaultValue='Any Dining Hall' onChange={(e) => {
           var loc = e.target.value;
           ReactGA.initialize("G-3RK4JBPND1")
           ReactGA.event({
@@ -46,7 +46,7 @@ function App() {
           setSelectedLocationState(loc);
           var recipesToUse = recipes.filter((recipe,p) => {
             for (let i = 0; i < recipe.location.length; i++) {
-              if (loc === 'Any Campus') {
+              if (loc === 'Any Dining Hall') {
                 return recipe
               }
               else if (recipe.location[i] === loc) {
@@ -57,7 +57,7 @@ function App() {
           })
           if (recipesToUse.length !== 0) setRecipesWithLocationState(recipesToUse)
         }}>
-          <option>Any Campus</option>
+          <option>Any Dining Hall</option>
           <option value="CollegeAve">CollegeAve</option>
           <option value="Livingston">Livingston</option>
           <option value="CookDouglass">CookDouglass</option>

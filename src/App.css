@@ -8,6 +8,13 @@
 .row{
   padding: 0px 4%;
 }
+.linkCard{
+  color: black;
+}
+:hover .linkCard{
+  text-decoration: none;
+  color: black;
+}
 .carditself{
   font-size: 1.5vw;
   margin-bottom: 4%;
@@ -17,11 +24,17 @@
   height: 30vw;
 }
 .card-title{
-  font-size: 4vw;
-  white-space: nowrap;
+  font-size: 4.5vw;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 6% 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+.below-title{
+  height: 40%;
+  margin-top: 5%;
 }
 .card-text{
   font-size: 2.5vw;
@@ -38,8 +51,9 @@
   color: grey;
   font-size: 2vw;
 }
-.rowPics{
-  margin-top: 20%;
+.campusLabel{
+  padding-top: 1%;
+  text-align: left;
 }
 .rowPics::after {
   content: "";
@@ -47,6 +61,7 @@
   display: table;
 }
 .columnPics {
+  margin-bottom: 5%;
   float: left;
   width: 10%;
   height: 20%;
