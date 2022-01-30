@@ -9,8 +9,10 @@ return(
                 ReactGA.initialize("G-28M3TNC840")
                 ReactGA.event({
                   category: "Button",
-                  action: "Clicked go back from navbar logo name",
+                  action: "Clicked Home from navbar logo",
                 });
+                console.log('Home from navbar')
+
         }}       
 >Add your recipe</a>
     </nav>

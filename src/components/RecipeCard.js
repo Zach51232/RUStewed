@@ -31,7 +31,7 @@ export default function RecipeCard(props) {
             ReactGA.initialize("G-28M3TNC840")
             ReactGA.event({
               category: "Button",
-              action: "Clicked go to recipe on a recipe card",
+              action: "Clicked See Recipe",
             });
           }}
           >

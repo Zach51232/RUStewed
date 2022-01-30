@@ -11,13 +11,15 @@ export default function RecipePage() {
         if (location.state === null) {
             ReactGA.event({
                 category: "ErrorLoad",
-                action: "came to recipe page with location.state as null",
+                action: "@ recipe page w/ null location.state",
             });
+            console.log('null state recipe')
             navigate('/')
         }
         else {
             var pagesrc = '/recipe/' + location.state[1].title
             ReactGA.send({ hitType: 'pageview', page: pagesrc })
+            console.log('send pageview /recipe/'+location.state[1].title)
         }
     });
     if (location.state !== null) {
@@ -32,8 +34,10 @@ export default function RecipePage() {
                 <Link className='btn btn-primary' to='/' onClick={() => {
                     ReactGA.event({
                         category: "Button",
-                        action: "Clicked home from primary button on recipe page",
+                        action: "Clicked Home btn recipe-page",
                     });
+                    console.log('clicked home primary')
+
                 }
                 }>Back to home
                 </Link>
