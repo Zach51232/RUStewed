@@ -2,6 +2,8 @@ import React from 'react';
 
 import '../App.css'
 import { Link } from 'react-router-dom'
+import ReactGA from "react-ga4";
+
 
 
 export default function RecipeCard(props) {
@@ -25,7 +27,13 @@ export default function RecipeCard(props) {
               { author: author },
               { location: location }
             ]
-          }
+          } onClick={()=>{
+            ReactGA.initialize("G-28M3TNC840")
+            ReactGA.event({
+              category: "Button",
+              action: "Clicked go to recipe on a recipe card",
+            });
+          }}
           >
             See recipe
             <p className='card-author'>{author}</p>

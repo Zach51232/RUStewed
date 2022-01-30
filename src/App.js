@@ -1,8 +1,9 @@
 import './App.css';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import RecipeCard from './components/RecipeCard.js'
 import recipes from './components/recipes.js'
 import Navbar from './components/Navbar.js'
+import ReactGA from "react-ga4";
 
 function CreateRecipeCard(recipe) {
   return (
@@ -19,38 +20,36 @@ function CreateRecipeCard(recipe) {
 }
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-28M3TNC840")
+    ReactGA.send({ hitType: 'pageview', page: '/' })
+  }, [])
   const [selectedLocation, setSelectedLocationState] = useState("");
   const [recipesWithLocation, setRecipesWithLocationState] = useState("");
   return (
     <div>
-
-
       <Navbar />
       <div className='recipeHeader'>
         <h1 className='recipeListLabel'>
           <span>Recipe list</span>
         </h1>
       </div>
-      {console.log('made it here1 and selectedLocation=' + selectedLocation)}
       <div className='container p-5'>
         <select className="custom-select" defaultValue='Any' onChange={(e) => {
           var selectedLocation = e.target.value;
           setSelectedLocationState(selectedLocation);
-          console.log('made it her2e and selectedLocation = ' + selectedLocation)
 
           var recipesToUse = recipes.filter((recipe) => {
-            console.log('here before loop and recipe name is ' + recipe.title + 'and its size of location is ' + recipe.location.length + 'its first location is ' + recipe.location[0])
             for (let i = 0; i < recipe.location.length; i++) {
-              if(selectedLocation==='Any'){
+              if (selectedLocation === 'Any') {
                 return recipe
               }
               else if (recipe.location[i] === selectedLocation) {
-                console.log('found a recipe with title: ' + recipe.title)
                 return recipe
               }
             }
           })
-          recipesToUse.length !== 0 ? setRecipesWithLocationState(recipesToUse) : console.log('Empty')
+          if (recipesToUse.length !== 0) setRecipesWithLocationState(recipesToUse)
         }}>
           <option>Any</option>
           <option value="CollegeAve">CollegeAve</option>
@@ -68,9 +67,7 @@ function App() {
               <h1 >No Results found!</h1> </div>
           )}
       </div>
-
     </div>
-
   );
 }
 

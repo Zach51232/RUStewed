@@ -1,12 +1,23 @@
 import { useEffect, React } from 'react'
 import { useLocation, Link, useNavigate } from 'react-router-dom'
 import Navbar from './Navbar'
+import ReactGA from "react-ga4";
 
 export default function RecipePage() {
     const location = useLocation()
     let navigate = useNavigate()
     const a = useEffect(() => {
-        if (location.state === null) navigate('/')
+        ReactGA.initialize("G-28M3TNC840")
+        if (location.state === null){
+            ReactGA.event({
+                category: "ErrorLoad",
+                action: "came to recipe page with location.state as null",
+            });
+            navigate('/')
+        } 
+        else{
+            ReactGA.send({ hitType: 'pageview', page: '/recipe'+'/'+location.state[1].title })
+        }
     });
     if (location.state !== null) {
         var img = location.state[0].image
@@ -17,7 +28,13 @@ export default function RecipePage() {
         return (
             <div>
                 <Navbar />
-                <Link className='btn btn-primary' to='/'>Back to home
+                <Link className='btn btn-primary' to='/' onClick={() => {
+                    ReactGA.event({
+                        category: "Button",
+                        action: "Clicked home from primary button on recipe page",
+                    });
+                }
+                }>Back to home
                 </Link>
                 <div className="jumbotron">
                     <h1 className="display-4">{title}</h1>
@@ -41,7 +58,7 @@ export default function RecipePage() {
                         }
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
     else {

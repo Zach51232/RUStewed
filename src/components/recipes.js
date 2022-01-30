@@ -8,7 +8,7 @@ const recipes = [
         id: 1,
         title: 'M&M Cookie Ice cream',
         image: cookiemnm,
-        description: 'AmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sandwhich',
+        description: 'Take 2 sugar cookies from dessert line, vanilla soft serve between them and drop m&ms on it.',
         author: 'Zach',
         location:[
             'CollegeAve',
@@ -21,7 +21,7 @@ const recipes = [
         id: 2,
         title: 'Caesar Salad',
         image: caesarSalad,
-        description: 'AmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazingAmazing sandwhich',
+        description: 'Take lettuce, cheese, and croutons and sprinkle with Caesar dressing from salad bar, top with meat from sandwhiches at the sandwhich bar',
         author: 'Zach',
         location:[
             'Busch',
