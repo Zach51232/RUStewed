@@ -1,6 +1,6 @@
 import ReactGA from "react-ga4";
 export default function NavBar(){
-  ReactGA.initialize("G-28M3TNC840")
+  ReactGA.initialize("G-3RK4JBPND1")
 return(
     <nav className="navbar navbar-expand-md navbar-light bg-light topnav">
     <a className="navbar-brand" href="/"     onClick={

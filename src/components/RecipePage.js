@@ -7,7 +7,7 @@ export default function RecipePage() {
     const location = useLocation()
     let navigate = useNavigate()
     useEffect(() => {
-        ReactGA.initialize("G-28M3TNC840")
+        ReactGA.initialize("G-3RK4JBPND1")
         if (location.state === null) {
             ReactGA.event({
                 category: "ErrorLoad",

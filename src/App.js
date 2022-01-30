@@ -21,7 +21,7 @@ function CreateRecipeCard(recipe) {
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize("G-28M3TNC840")
+    ReactGA.initialize("G-3RK4JBPND1")
     ReactGA.event({ 
       category: 'page',
       action: '/'
@@ -40,12 +40,11 @@ function App() {
       <div className='container p-5'>
         <select className="custom-select" defaultValue='Any' onChange={(e) => {
           var loc = e.target.value;
-          ReactGA.initialize("G-28M3TNC840")
+          ReactGA.initialize("G-3RK4JBPND1")
           ReactGA.event({
             category: "Dropdown",
             action: "Set campus to"+loc
           });
-          console.log('Send event set campus to '+loc)
           if(!loc) console.log(selectedLocation)
           setSelectedLocationState(loc);
           var recipesToUse = recipes.filter((recipe,p) => {

@@ -28,7 +28,7 @@ export default function RecipeCard(props) {
               { location: location }
             ]
           } onClick={()=>{
-            ReactGA.initialize("G-28M3TNC840")
+            ReactGA.initialize("G-3RK4JBPND1")
             ReactGA.event({
               category: "Button",
               action: "Clicked See Recipe",
