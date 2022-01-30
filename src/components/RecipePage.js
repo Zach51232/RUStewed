@@ -45,22 +45,23 @@ export default function RecipePage() {
                         <p>{description}</p>
                     </div>
                 </div>
+                <div className='bottomHalf'>
                 <div className='page'>
-                    <div className='rowPics'>
+                <p><i>Contributed by {author}</i></p>
+                    <div className = 'halls'>
                         <h5>Campus dining halls with ingredients:</h5>
                         {
                             loc.length > 0 ? (loc.map(function (loc, i) {
                                 return (
-                                    <div className='columnPics' key={i}>
+                                    <div className='columnPicsTwo' key={i}>
                                         <img className='labelPlace' key={i} src={require('../imgs/' + loc + '.jpg')} alt='location'></img>
                                     </div>
                                 );
-                            })) : <p>no labels</p>
+                            }))
+                            : <p>no labels</p>
                         }
                     </div>
                 </div>
-                <div>
-                    <p><i>Contributed by {author}</i></p>
                 </div>
             </div >
         );
