@@ -36,7 +36,7 @@ export default function RecipeCard(props) {
             <div className='below-title'>
               <p className="card-text">{description}</p>
               <p className='toRecipe'>See recipe</p>
-              <p className='card-author'>{author}</p>
+              <p className='card-author'><i>{author}</i></p>
               <div className='rowPics'>
                 <div>
                 <p className='campusLabel'>Campus with ingredients: </p>
