@@ -25,6 +25,7 @@
 }
 .card-title{
   font-size: 4.5vw;
+  height: 28%;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
