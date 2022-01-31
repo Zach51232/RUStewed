@@ -9,6 +9,7 @@ import pbtoast from '../imgs/pbtoast.jpg'
 import sadpasta from '../imgs/sadpasta.jpg'
 import waffle from '../imgs/waffle.jpg'
 import CoCo from '../imgs/CoCo.jpg'
+import Croiffle from '../imgs/Croiffle.jpg'
 
 const recipes = [
     {
@@ -113,10 +114,10 @@ const recipes = [
     },
     {
         id: 9,
-        title: 'Caesar Meat Salad',
+        title: 'Caesar Deli Salad',
         image: caesarSalad,
-        description: 'Take lettuce, cheese, and croutons and sprinkle with Caesar dressing from salad bar, top with meat from sandwhiches at the sandwhich bar.',
-        author: 'Scarlet Knight',
+        description: 'Take lettuce and croutons and sprinkle with Caesar dressing from salad bar, top with meat from sandwhiches at the sandwhich bar.',
+        author: 'Zach',
         location: [
             'Busch',
             'CollegeAve',
@@ -130,7 +131,7 @@ const recipes = [
         title: 'M&M Ice cream sandwhich',
         image: cookiemnm,
         description: 'Take 2 sugar cookies from dessert line, vanilla soft serve between them and drop m&ms on it.',
-        author: 'Scarlet Knight',
+        author: 'Zach',
         location: [
             'Busch',
             'CollegeAve',
@@ -144,7 +145,7 @@ const recipes = [
         title: 'CoCo',
         image: CoCo,
         description: 'Coffee/CocaCola -Works best in a large refillable bottle, but can be scaled down. All measurements are rough estimates based on the size of the container. 1: Fill half way with ice. 2: Fill 1/8-1/6th with Medium Roast coffee. 3: Stir/Shake/Agitate. 4: Fill half way with coke. 5: Stir/Swirl, this is optional but uses the ice to pop some of the excess foam. 6: Fill rest of the way with coke 7: Shake/Stir to mix and remove more foam 8: Enjoy!',
-        author: 'The Livingston Doctor',
+        author: 'The Livi Dr',
         location: [
             'Busch',
             'CollegeAve',
@@ -153,7 +154,20 @@ const recipes = [
         ],
         likes: 10
     },
-
+    {
+        id: 12,
+        title: 'Nutella-Filled Croiffle',
+        image: Croiffle,
+        description: 'Cut a croissant like a hot dog bun. Spread Nutella in the middle, but not so much that it spills out when you press it in the waffle maker. Press the croissant in the waffle maker for 3-5 minutes (no non-stick spray needed). Top with ice cream, whipped cream, fruit, nuts, honey, anything. Enjoy with a cup of tea or coffee.',
+        author: 'Scarlet Knight',
+        location: [
+            'Busch',
+            'CollegeAve',
+            'CookDouglass',
+            'Livingston'
+        ],
+        likes: 10
+    },
 ];
 
 export default recipes;
