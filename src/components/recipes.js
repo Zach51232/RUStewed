@@ -13,14 +13,11 @@ import CoCo from '../imgs/CoCo.jpg'
 const recipes = [
     {
         id: 1,
-        title: 'Solid Greek Salad',
-        image: greeksalad,
-        description: 'Tomato slices, Cucumber, Red onion, olives, oil, vinegar',
+        title: 'Crunchy Roasted Pepper Panini',
+        image: redpanini,
+        description: 'Rip a tortilla (by the fruit) in half and spread with hummus (health bar) on one side. Place roasted peppers and tortilla chips (if available at health bar) on the hummus. Add onions and whatever else youd like (salad bar). Put in panini press. Then drizzle chipotle mayo or your condiment of choice on the inside.',
         author: 'Scarlet Knight',
         location: [
-            'Busch',
-            'CollegeAve',
-            'CookDouglass',
             'Livingston'
         ],
         likes: 10
@@ -52,20 +49,23 @@ const recipes = [
     },
     {
         id: 4,
-        title: 'Trail Mix',
-        image: trailmix,
-        description: 'Take the nuts, m&m, chocolates chips, craisins or raisins and some fruits mix together, Ziploc it and take it home.',
+        title: 'Solid Greek Salad',
+        image: greeksalad,
+        description: 'Tomato slices, Cucumber, Red onion, olives, oil, vinegar',
         author: 'Scarlet Knight',
         location: [
+            'Busch',
+            'CollegeAve',
+            'CookDouglass',
             'Livingston'
         ],
         likes: 10
     },
     {
         id: 5,
-        title: 'Crunchy Roasted Pepper Panini',
-        image: redpanini,
-        description: 'Rip a tortilla (by the fruit) in half and spread with hummus (health bar) on one side. Place roasted peppers and tortilla chips (if available at health bar) on the hummus. Add onions and whatever else youd like (salad bar). Put in panini press. Then drizzle chipotle mayo or your condiment of choice on the inside.',
+        title: 'Trail Mix',
+        image: trailmix,
+        description: 'Take the nuts, m&m, chocolates chips, craisins or raisins and some fruits mix together, Ziploc it and take it home.',
         author: 'Scarlet Knight',
         location: [
             'Livingston'
