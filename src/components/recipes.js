@@ -8,6 +8,7 @@ import redpanini from '../imgs/redpanini.jpeg'
 import pbtoast from '../imgs/pbtoast.jpg'
 import sadpasta from '../imgs/sadpasta.jpg'
 import waffle from '../imgs/waffle.jpg'
+import CoCo from '../imgs/CoCo.jpg'
 
 const recipes = [
     {
@@ -138,7 +139,20 @@ const recipes = [
         ],
         likes: 10
     },
-    
+    {
+        id: 11,
+        title: 'CoCo',
+        image: CoCo,
+        description: 'Coffee/CocaCola -Works best in a large refillable bottle, but can be scaled down. So all measurements are rough estimates based on the size of the container -Fill half way with ice, -Fill 1/8-1/6th with Medium Roast coffee -Stir/Shake/Agitate -Fill half way with coke, -Stir/Swirl, this is optional but uses the ice to pop some of the excess foam -Fill rest of the way with coke -Shake/Stir to mix and remove more foam, -Enjoy!',
+        author: 'The Livingston Plague Doctor',
+        location: [
+            'Busch',
+            'CollegeAve',
+            'CookDouglass',
+            'Livingston'
+        ],
+        likes: 10
+    },
 
 ];
 
