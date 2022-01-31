@@ -144,7 +144,7 @@ const recipes = [
         title: 'CoCo',
         image: CoCo,
         description: 'Coffee/CocaCola -Works best in a large refillable bottle, but can be scaled down. All measurements are rough estimates based on the size of the container. 1: Fill half way with ice. 2: Fill 1/8-1/6th with Medium Roast coffee. 3: Stir/Shake/Agitate. 4: Fill half way with coke. 5: Stir/Swirl, this is optional but uses the ice to pop some of the excess foam. 6: Fill rest of the way with coke 7: Shake/Stir to mix and remove more foam 8: Enjoy!',
-        author: 'The Livingston Plague Doctor',
+        author: 'The Livingston Doctor',
         location: [
             'Busch',
             'CollegeAve',
