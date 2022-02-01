@@ -39,9 +39,12 @@
 }
 .card-text{
   font-size: 2.5vw;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
 }
 .card-author{
   overflow: hidden;
